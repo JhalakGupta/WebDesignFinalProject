@@ -1,28 +1,24 @@
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
-    
-    //<--Using Popovers here--> 		
-/*$(document).ready(function(){
-    $('[data-toggle="popover"]').tooltip();
-});*/
-
+/* Downloaded from https://www.codeseek.co/ */
+// Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+ 
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+   
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
 						var input = document.getElementById("countries");
 						var awesomplete = new Awesomplete(input, {
 						  minChars: 1, 
@@ -218,14 +214,11 @@ function validatePassword1(psw) {
     return re.test(String(email).toLowerCase());	
        }
 
-		function validateContactNumber(contact)
+function validateContactNumber(contact)
 		{
 		    var telRegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 			  return telRegExp.test(contact);
-	    }	  
+	 }	  
 						
 
-</script>
-
-
-
+						
