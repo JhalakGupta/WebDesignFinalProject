@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Coffee Shop</title>
+<meta charset="utf-8">
+<link href="pacific.css" rel="stylesheet">
+</head>
+<body>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div id="wrapper">
+<header><h1>Current Job Openings</h1></header>
+<!-- <div class="topnav" id="myTopnav">
+<nav><a href="index.html">Home</a> &nbsp; &nbsp; <a href="menu.html">Menu</a>   &nbsp;&nbsp; <a href="aboutus.html">About Us</a>  &nbsp; &nbsp; <a href="jobs.html">Careers</a> &nbsp; &nbsp; <a href="contactus.html">Contact Us</a> <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> </nav>
+</div> -->
+<ul class="main-navigation">
+  <li><a href="index.html">Home</a>
+  <ul>
+      <li><a href="imageGallery.html">Image Gallery</a></li>
+    </ul>
+  </li>
+  <li><a href="menu.html">Menu</a>
+    <ul>
+      <li><a href="beverages.html">Beverages</a></li>
+      <li><a href="littlebites.html">Little Bites</a>
+      </li>
+      <li><a href="desserts.html">Desserts</a>
+      </li>
+      <li><a href="foodcombos.html">Food Combos</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="jobs.html">Careers</a>
+    <ul>
+      <li><a href="openings.html">Job Postings</a></li>
+      <li><a href="applynow.html">Apply Now</a></li>
+    </ul>
+  </li>
+  <li><a href="aboutus.html">About Us</a>
+   <ul>
+      <li><a href="contactus.html">Contact Us</a>
+   </ul>
+   <li><a href="ourstores.html">Our Stores</a></li>
+  
+    <!-- <ul>
+      <li><a href="emailus.html">Email Us</a></li>
+      <li><a href="callus.html">Call Us</a></li>
+    </ul> -->
+  </li>
+</ul>
+<div id="openings">
+</div> 
+<main>
+<h2>Opportunities with us..</h2>
+<!-- <h3>"Welcome to our job Board."</h3>
+<p><b>"The Coffee Shop"</b> provides a variety of opportunities to the people who are looking forward to start their career with us. At our stores we have different levels of job openings across United States. We are looking for talented and enthusiastic young professionals. We have month long training sessions organized for our new team members which helps them to get familiar with the working environment. People looking forward for better opportunities can contact us. Please go through the current openings at our stores at different locations. We will be happy to welcome you in our team.</p> -->
+
+<h3><strong><u>Current Job Openings : </u></strong></h3>
+  <!-- <div id="jobsMain">
+  	<div id="jobsLeft">
+    <p>Senior Store Manager</br>
+    Vacancies : 3 </br>
+    Experience : Above 4 Years</br>
+	</p>
+
+    <p>Assistant Store Manager</br>
+    Vacancies : 4 </br>
+    Experience : Above 2 Years</br>
+	</p>
+
+    <p>Executive /Sr Executive – Maintenance</br>
+    Vacancies : 2 </br>
+    Experience : 1-2 Years</br>
+	</p>
+
+    </div>
+    <div id="jobsRight">
+
+    <p>Customer Service Associate</br>
+    Vacancies : 6 </br>
+    Experience : 1-2 Years</br>
+	</p>
+
+    <p>Operations Manager</br>
+    Vacancies : 2 </br>
+    Experience : Above 6 Years</br>
+	</p>
+
+    </div>
+   </div> -->
+   <table>
+  <tr>
+    <td>* Senior Store Manager</br>
+    Vacancies : 3 </br>
+    Experience : Above 4 Years</td>
+    <td>* Assistant Store Manager</br>
+    Vacancies : 4 </br>
+    Experience : Above 2 Years</td>
+  </tr>
+  <tr>
+    <td>* Executive /Sr Executive – Maintenance</br>
+    Vacancies : 2 </br>
+    Experience : 1-2 Years</td>
+    <td>* Customer Service Associate</br>
+    Vacancies : 6 </br>
+    Experience : 1-2 Years</td>
+  </tr>
+  <tr>
+    <td>* Operations Manager</br>
+    Vacancies : 2 </br>
+    Experience : Above 6 Years</td>
+    <td></td>
+  </tr>
+</table>
+    <p>We will keep you updated about the future opportunities with us.</p>
+
+<!-- <p>If you want to be a part of fastest growing coffee chain across United States and join a team over 1000 efficient employees please mail your details to <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shubhi04@gmail.com" target="_blank">shubhi04@gmail.com</a> we will get back soon to you. Also, you can fill the below form and submit the details.</P>
+<br>
+<form action="">
+  <p>First Name : <input name="firstname" id="firstname" type="text"></p>
+  <p id="er1"></p>
+  <p>Last Name : <input name="lastname" id="lastname" type="text"></p>
+  <p id="er2"></p>
+  <p>Designation : <select name="post" id="designation">
+  	<option value="select">Select</option>
+  <option value="ssm">Senior Store Manager</option>
+  <option value="asm">Assistant Store Manager</option>
+  <option value="om">Operations Manager</option>
+  <option value="csa">Customer Service Associate</option>
+  <option value="em">Executive /Sr Executive – Maintenance</option>
+</select></p>
+<p>Email Id : &nbsp; &nbsp; &nbsp;<input name="email" id="email" type="email"> (e.g. abc@xyz.com) </p>
+<p id="er4"></p>
+<p>Experience : <input name="exp" id="exp" type="number"></p>
+<p id="er5"></p>
+
+<p>Contact no. : <input name="contact" id="contact" type="tel" maxlength="10"></p>
+<p id="er6"></p>
+
+  <br><br>
+  <button type="button" onclick="return chkform()"> Submit </button>
+  <button type="reset"> Reset </button>
+  <p id="successMessage"></p>
+  <script>   
+            function chkform()
+            {
+              if (document.getElementById("firstname").value === "" ) 
+              {
+               document.getElementById("er1").innerHTML = "First Name cant be left blank"; 
+               document.getElementById("er1").style.color = "red"; 
+               document.getElementById("er1").style.display = "block"; 
+              }
+              else if(document.getElementById("lastname").value === "" ){
+			   document.getElementById("er2").innerHTML = "Last Name cant be left blank"; 
+               document.getElementById("er2").style.color = "red"; 
+               document.getElementById("er2").style.display = "block"; 
+              }
+               else if(document.getElementById("exp").value === "" )
+               {
+			   document.getElementById("er5").innerHTML = "Experience cant be left blank"; 
+               document.getElementById("er5").style.color = "red"; 
+               document.getElementById("er5").style.display = "block"; 
+              }
+              else if(document.getElementById("email").value === "" )
+               {
+			   document.getElementById("er4").innerHTML = "Email Id cant be left blank"; 
+               document.getElementById("er4").style.color = "red"; 
+               document.getElementById("er4").style.display = "block"; 
+              }
+               else if(document.getElementById("contact").value === "" )
+               {
+			   document.getElementById("er6").innerHTML = "Contact No. Name cant be left blank"; 
+               document.getElementById("er6").style.color = "red"; 
+               document.getElementById("er6").style.display = "block"; 
+              }
+              else{
+              	alert("Hello, Your Details are submitted successfully. We will Contact you soon.");
+              }
+        }
+</script>
+
+</form> -->
+
+</main>
+<footer>
+Copyright &copy; 2018 The Coffee Shop. All rights reserved<br>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=shubhi04@gmail.com" target="_blank">shubhi04@gmail.com</a>
+<br>
+<br>
+<a href="terms&conditions.html" target="_blank">***Terms & Conditions***</a>
+</footer>
+</div>
+</body>
+</html>
