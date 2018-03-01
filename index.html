@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 <link href="movie.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.css"> 
+<link rel="stylesheet" href="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.css">
 <script src="https://cdn.rawgit.com/LeaVerou/awesomplete/gh-pages/awesomplete.min.js"></script>
 <script type="text/javascript" src="https://ia.media-imdb.com/images/G/01/imdbads/js/beacon-1792157672._CB514933407_.js"></script>
 </head>
@@ -22,19 +22,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#"><img src="Home.png" alt="Home"style="width:30px;height:30px;"> &nbsp&nbsp&nbsp</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="Movie.html">Movies</a>
+                    <a class="nav-link" href="Movie.html"><img src="Movies.png" alt="Movies"style="width:30px;height:30px;"> &nbsp&nbsp&nbsp</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="HolidayHomes.html">Games</a>
+                    <a class="nav-link" href="#"><img src="Games.png" alt="Games"style="width:30px;height:30px;"> &nbsp&nbsp&nbsp</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="Flights.html">TV</a>
+                    <a class="nav-link" href="#"><img src="TV.png" alt="TV"style="width:30px;height:30px;"> &nbsp&nbsp&nbsp</a>
                 </li>
                  <li class="nav-item active">
-                    <a class="nav-link" href="Restaurants.html">Music</a>
+                    <a class="nav-link" href="#"><img src="Music.png" alt="Music"style="width:30px;height:30px;"> &nbsp&nbsp&nbsp</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -53,14 +53,14 @@
     					<div class="container">
   						<div class="searchcountry">
   						<form id="searchbox" name="myForm1" action="Hotels.html" onsubmit="return validateForm()">
-  						<input id="countries" type="text" name="cityname" placeholder="Search City" style="background: #F3F3F3;" />
+  						<input id="countries" type="text" name="cityname" placeholder="Search Movies/TV/Games/Music" style="background: #F3F3F3;" />
   						<input type="submit" style="width: 120px; height: 50px; border: 1px solid black; border-radius: 4px; background-repeat: no-repeat;
-    padding: 12px 12px 12px 12px; background: #148F77; font-weight: bold;" Value="Search City">
+    padding: 12px 12px 12px 12px; background: #148F77; font-weight: bold;" Value="Search">
   						</form>
   						</div>
 
                     </div>
-                    
+
                     <!-- The Modal (contains the Sign Up form) -->
 <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
@@ -71,28 +71,28 @@
         <hr>
          <label for="firstName"><b>First Name</b></label>
         <input type="text" placeholder="Enter First Name" name="fname" required>
-        
+
          <label for="lastName"><b>Last Name</b></label>
         <input type="text" placeholder="Enter Last Name" name="lname" required>
-        
+
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="yourname@domain.com"  name="email" required>
-        
+
         <label for="number"><b>Contact Number</b></label>
         <input type="text" placeholder="xxx-xxx-xxxx" name="number" required>
-  
+
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
-  
+
         <label for="psw-repeat"><b>Confirm Password</b></label>
         <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-  
+
         <label>
           <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
         </label>
-  
+
         <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-  
+
         <div class="clearfix">
           <button type="button"  onclick="document.getElementById('id01').style.display='none'"  style= "background-color: #f44336;" "width: 5%;">Cancel</button>
           <button type="button"   onclick="validateField()" style= "background-color: green;" "width: 5%;">Sign Up</button>
@@ -101,7 +101,7 @@
     </form>
   </div>
 <div id="id02" class="modal">
-  
+
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -114,7 +114,7 @@
 
       <label for="psw1"><b>Password</b></label>
       <input id ='psw1' type="password" placeholder="Enter Password" name="psw1" required>
-        
+
       <button type="button"  onclick="validatePassword1(document.getElementById('psw1').value)" style= "background-color: green;" "width: 10%;"  >Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -127,19 +127,17 @@
     </div>
   </form>
 </div>
-<!--Footer starts here-->  	
-    <footer>
-         <center><div><em>About Us | Contact Us | Blogs | Disclaimer  </em><div class="logos"><a href="#"><img src="facebook-logo-button.png" /></a> &nbsp &nbsp <a href="#"><img src="instagram-logo.png" /></a> &nbsp &nbsp <a href="#"><img src="twitter-logo-button.png" /></a><center>
-        <p><b> Copyright &copy; 2018 Your Trip Advisior. All rights reserved</b></p>
-     </footer>
-        <!--Footer ends here-->
-       
+
+
+ 
+
+
       <script type="text/javascript">
           function myFunction() {
             alert("Your Details are submitted. We will get back to you soon.");
         }
       </script>
-      <script src="Logics.js"></script>
+	  <script src="logic1.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -149,13 +147,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<!--Footer starts here-->  	
+<!--Footer starts here-->
     <footer>
          <center><div><em>About Us | Contact Us | Blogs | Disclaimer  </em><div class="logos"><a href="#"><img src="facebook-logo-button.png" /></a> &nbsp &nbsp <a href="#"><img src="instagram-logo.png" /></a> &nbsp &nbsp <a href="#"><img src="twitter-logo-button.png" /></a><center>
-        <p><b> Copyright &copy; 2018 Your Trip Advisior. All rights reserved</b></p>
+        <p><b> Copyright &copy; 2018 Flixon. All rights reserved</b></p>
      </footer>
         <!--Footer ends here-->
-  
+
 </body>
 </html>
-

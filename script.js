@@ -1,6 +1,24 @@
-  <script type="text/javascript">
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
     
-    //<!--Using Popovers here--> 		
+    //<--Using Popovers here--> 		
 /*$(document).ready(function(){
     $('[data-toggle="popover"]').tooltip();
 });*/
@@ -208,3 +226,6 @@ function validatePassword1(psw) {
 						
 
 </script>
+
+
+

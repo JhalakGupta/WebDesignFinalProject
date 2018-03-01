@@ -1,27 +1,12 @@
-/* Downloaded from https://www.codeseek.co/ */
-// Instantiate the Bootstrap carousel
-$('.multi-item-carousel').carousel({
-  interval: false
-});
- 
-// for every slide in carousel, copy the next slide's item in the slide.
-// Do the same for the next, next item.
-$('.multi-item-carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-   
-  if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-  } else {
-    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
-});
+
+    //<!--Using Popovers here-->
+/*$(document).ready(function(){
+    $('[data-toggle="popover"]').tooltip();
+});*/
+
 						var input = document.getElementById("countries");
 						var awesomplete = new Awesomplete(input, {
-						  minChars: 1, 
+						  minChars: 1,
 						  autoFirst: true,
 						  maxItems: 10
 						});
@@ -35,7 +20,7 @@ $('.multi-item-carousel .item').each(function(){
 							return false;
 						}
     					else if (x == "California" || x == "Boston" || x == "New York" || x == "Chicago" || x == "Dallas" ) {
-        					
+
         				return true;
     					}
 						else
@@ -43,16 +28,16 @@ $('.multi-item-carousel .item').each(function(){
 						alert("Sorry we dont service in this city");
 						return false;
 						}
-						
+
         }
 
 
 
-						     
+
       // Get the modal
       var modal = document.getElementById('id01');
 	  var modal1 = document.getElementById('id02');
-      
+
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
           if (event.target == modal) {
@@ -62,11 +47,11 @@ $('.multi-item-carousel .item').each(function(){
               modal1.style.display = "none";
           }
       }
-	  
 
-          
+
+
       function validateField() {
-	  
+
 	   var firstName = document.forms["myForm"]["fname"].value;
 	   var lastName = document.forms["myForm"]["lname"].value;
 	   var email= document.forms["myForm"]["email"].value;
@@ -74,24 +59,24 @@ $('.multi-item-carousel .item').each(function(){
 	   var psw=document.forms["myForm"]["psw"].value;
 	   var pswRepeat=document.forms["myForm"]["psw-repeat"].value;
 	   //var emailRegExp = /^([^<>()\[\],;:@"\x00-\x20\x7F]|\\.)+@(([a-z]|#\d+?)([a-z0-9-]|#\d+?)*([a-z0-9]|#\d+?)\.)+([a-z]{2,4})$/i ;
-	  
+
          if (firstName == "") {
               alert(" first Name must be filled out");
 			   return false;
 			  } else if (lastName == "") {
               alert("last Name must be filled out");
 			   return false;
-			  
+
 			  }else if(!validateEmail(email) || email=="")
 			  {
 			     alert("Email must be valid");
 			      return false;
-			  
+
 			  } else if(!validateContactNumber(contact) || contact=="")
 			  {
 			     alert("Contact number must be valid");
 			      return false;
-				  
+
 			  }
 			 else if (!validatePassword(psw))
 			  {
@@ -101,10 +86,10 @@ $('.multi-item-carousel .item').each(function(){
 			  {
 			     alert("Password and Confirm password not matching ");
 			      return false;
-			  } 
+			  }
 			  else
-			  { 
-			  
+			  {
+
 			     alert("You have successfully registered");
 				 document.getElementById('id01').style.display='none';
                  document.forms["myForm"]["fname"].value="";
@@ -117,7 +102,7 @@ $('.multi-item-carousel .item').each(function(){
 			  }
       }
 
-// This method validates the fields for the Login form	  
+// This method validates the fields for the Login form
 function validatePassword1(psw) {
     var errorUserName = "";
 	var str=document.getElementById('uname').value;
@@ -146,26 +131,26 @@ function validatePassword1(psw) {
         error = "You didn't enter a password.\n";
         alert(error);
         return false;
- 
+
     } else if ((psw.length < 7) || (psw.length > 15)) {
         error = "The password length must be atleast 7 characters. \n";
         alert(error);
         return false;
- 
+
     } else if (illegalChars.test(psw)) {
         error = "The password contains illegal characters.\n";
         //document.forms["myForm"]["psw"].style.background = 'Yellow';
         alert(error);
         return false;
- 
+
     } else if ( (psw.search(/[a-zA-Z]+/)==-1) || (psw.search(/[0-9]+/)==-1) ) {
         error = "The password must contain at least one numeral.\n";
       // document.forms["myForm"]["psw"].style.background = 'Yellow';
         alert(error);
         return false;
- 
+
     } else {
-	
+
         alert("You have successfully logged In");
 				  document.getElementById('uname').value="";
                   document.getElementById('psw1').value="";
@@ -174,8 +159,8 @@ function validatePassword1(psw) {
     }
 
 }
-			 
-			  
+
+
 	function validatePassword(psw) {
     var error = "";
     var illegalChars = /[\W_]/; // allow only letters and numbers
@@ -184,41 +169,38 @@ function validatePassword1(psw) {
         error = "You didn't enter a password.\n";
         alert(error);
         return false;
- 
+
     } else if ((psw.length < 7) || (psw.length > 15)) {
         error = "The password length must be atleast 7 characters. \n";
         document.forms["myForm"]["psw"].style.background = 'Yellow';
         alert(error);
         return false;
- 
+
     } else if (illegalChars.test(psw)) {
         error = "The password contains illegal characters.\n";
         document.forms["myForm"]["psw"].style.background = 'Yellow';
         alert(error);
         return false;
- 
+
     } else if ( (psw.search(/[a-zA-Z]+/)==-1) || (psw.search(/[0-9]+/)==-1) ) {
         error = "The password must contain at least one numeral.\n";
        document.forms["myForm"]["psw"].style.background = 'Yellow';
         alert(error);
         return false;
- 
+
     } else {
         document.forms["myForm"]["psw"].style.background = 'White';
     }
    return true;
 }
-		
+
 	function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());	
+    return re.test(String(email).toLowerCase());
        }
 
-function validateContactNumber(contact)
+		function validateContactNumber(contact)
 		{
 		    var telRegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 			  return telRegExp.test(contact);
-	 }	  
-						
-
-						
+	    }
