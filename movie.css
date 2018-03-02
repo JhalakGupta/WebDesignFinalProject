@@ -1,4 +1,4 @@
-#videobcg { 
+#videobcg {
    position: absolute;
    top: 0px;
    left: 0px;
@@ -15,12 +15,16 @@
   filter: blur(3px);
 }
 
-
+.navbar-brand{
+    font-size: 34px;
+   font-family: "Times New Roman", Times, serif;
+   font-style: italic;
+}
 
 
 #searchbox {
-    position:absolute; 
-    
+    position:absolute;
+
     top: 50%;
     display:inline-block;
     left: 25%;
@@ -78,12 +82,12 @@ button:hover {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1; 
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: #474e5d;
   padding-top: 50px;
 }
@@ -142,12 +146,12 @@ img.avatar {
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 
